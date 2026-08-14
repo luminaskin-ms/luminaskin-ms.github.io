@@ -1164,3 +1164,393 @@ footer p {
   }
 
 }
+/* =========================================
+   TREATMENTS PAGE
+========================================= */
+
+.treatment-page-hero {
+  min-height: 570px;
+
+  padding: 110px 9%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: white;
+
+  background:
+    radial-gradient(
+      circle at 75% 35%,
+      #4b3b27 0%,
+      #201c17 35%,
+      #070707 75%
+    );
+
+  position: relative;
+  overflow: hidden;
+}
+
+.treatment-page-hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 520px;
+  height: 520px;
+
+  right: -120px;
+  top: -100px;
+
+  border: 1px solid rgba(224, 194, 125, 0.45);
+
+  border-radius: 50%;
+}
+
+.treatment-page-hero h1 {
+  max-width: 900px;
+
+  margin: 0 0 30px;
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
+  font-size:
+    clamp(58px, 7vw, 94px);
+
+  font-weight: 500;
+
+  line-height: 0.9;
+
+  position: relative;
+  z-index: 2;
+}
+
+.treatment-page-hero h1 em {
+  color: var(--gold-light);
+
+  font-style: italic;
+}
+
+.treatment-page-hero > p:last-child {
+  max-width: 520px;
+
+  color: #d2ccc2;
+
+  font-size: 15px;
+
+  position: relative;
+  z-index: 2;
+}
+
+
+/* =========================================
+   TREATMENT DETAIL SECTIONS
+========================================= */
+
+.treatment-detail-section {
+  padding: 110px 8%;
+
+  background: white;
+}
+
+.treatment-detail-section:nth-of-type(even) {
+  background: var(--cream);
+}
+
+
+/* DARK SECTION */
+
+.dark-section {
+  color: white;
+
+  background: var(--black) !important;
+}
+
+
+/* GOLD SECTION */
+
+.gold-section {
+  color: white;
+
+  background: var(--gold) !important;
+}
+
+
+/* =========================================
+   DETAIL HEADING
+========================================= */
+
+.treatment-detail-heading {
+  max-width: 850px;
+
+  margin-bottom: 55px;
+}
+
+.treatment-detail-heading > span {
+  display: block;
+
+  margin-bottom: 18px;
+
+  color: var(--gold-dark);
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  letter-spacing: 3px;
+}
+
+.dark-section
+.treatment-detail-heading > span {
+  color: var(--gold-light);
+}
+
+.gold-section
+.treatment-detail-heading > span {
+  color: white;
+}
+
+.treatment-detail-heading h2 {
+  margin: 0;
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
+  font-size:
+    clamp(48px, 6vw, 72px);
+
+  font-weight: 500;
+
+  line-height: 0.95;
+}
+
+
+/* =========================================
+   DETAIL GRID
+========================================= */
+
+.treatment-detail-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+
+/* =========================================
+   DETAIL CARD
+========================================= */
+
+.detail-card {
+  min-height: 330px;
+
+  padding: 34px;
+
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  background: white;
+
+  border: 1px solid var(--line);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.detail-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+
+/* DARK / GOLD CARDS */
+
+.dark-section .detail-card,
+.gold-section .detail-card {
+  color: white;
+
+  background: rgba(255,255,255,0.06);
+
+  border:
+    1px solid
+    rgba(255,255,255,0.18);
+}
+
+.gold-section .detail-card {
+  background: rgba(0,0,0,0.12);
+
+  border-color:
+    rgba(255,255,255,0.35);
+}
+
+
+/* NUMBER */
+
+.detail-number {
+  color: var(--gold-dark);
+
+  font-size: 9px;
+
+  letter-spacing: 2px;
+}
+
+.dark-section .detail-number,
+.gold-section .detail-number {
+  color: var(--gold-light);
+}
+
+
+/* TITLE */
+
+.detail-card h3 {
+  margin:
+    24px
+    0
+    15px;
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
+  font-size: 38px;
+
+  font-weight: 600;
+
+  line-height: 1;
+}
+
+
+/* DESCRIPTION */
+
+.detail-card p {
+  margin: 0;
+
+  color: #68635b;
+
+  font-size: 13px;
+
+  line-height: 1.75;
+}
+
+.dark-section .detail-card p,
+.gold-section .detail-card p {
+  color: #d3cec5;
+}
+
+
+/* CONSULTATION LINK */
+
+.detail-card a {
+  margin-top: auto;
+
+  padding-top: 28px;
+
+  color: var(--gold-dark);
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.8px;
+
+  text-transform: uppercase;
+}
+
+.dark-section .detail-card a,
+.gold-section .detail-card a {
+  color: var(--gold-light);
+}
+
+
+/* =========================================
+   SUB-TREATMENT LIST
+========================================= */
+
+.sub-list {
+  margin-top: 20px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+}
+
+.sub-list span {
+  padding: 6px 10px;
+
+  color: var(--gold-dark);
+
+  background: #f4f0e8;
+
+  font-size: 9px;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .treatment-detail-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .treatment-page-hero {
+    min-height: 500px;
+
+    padding:
+      80px 8%;
+  }
+
+  .treatment-page-hero h1 {
+    font-size: 56px;
+  }
+
+
+  .treatment-detail-section {
+    padding:
+      75px 7%;
+  }
+
+
+  .treatment-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .detail-card {
+    min-height: 290px;
+
+    padding: 30px;
+  }
+
+
+  .treatment-detail-heading h2 {
+    font-size: 50px;
+  }
+
+}
