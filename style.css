@@ -1113,3 +1113,54 @@ footer p {
   }
 
 }
+/* =========================================
+   TREATMENT SUB-CATEGORIES
+========================================= */
+
+.treatment-group {
+  position: relative;
+  z-index: 2;
+  margin-top: 22px;
+}
+
+.treatment-group h4 {
+  margin: 0 0 8px;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  color: var(--gold-light);
+}
+
+.treatment-light .treatment-group h4,
+.treatment-white .treatment-group h4 {
+  color: var(--gold-dark);
+}
+
+.treatment-group ul {
+  margin-top: 0;
+}
+
+
+/* Make the large Injectables card easier to read */
+
+.treatment-large {
+  overflow-y: hidden;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .treatment-group {
+    margin-top: 18px;
+  }
+
+  .treatment-large {
+    min-height: auto;
+  }
+
+}
