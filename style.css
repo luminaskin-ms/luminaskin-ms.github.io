@@ -1,0 +1,1115 @@
+/* =========================================
+   LUMINASKIN MEDICAL SPA
+   VERSION 2 — LUXURY BLACK / WHITE / GOLD
+========================================= */
+
+:root {
+  --black: #090909;
+  --deep-black: #050505;
+  --ink: #151515;
+
+  --white: #ffffff;
+  --cream: #faf8f3;
+
+  --gold: #c7a15a;
+  --gold-light: #e0c27d;
+  --gold-dark: #9a7435;
+
+  --line: #ded7ca;
+}
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--white);
+  color: var(--ink);
+  font-family: "Montserrat", Arial, sans-serif;
+  line-height: 1.65;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+  height: 86px;
+
+  padding: 0 6%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid var(--line);
+
+  position: sticky;
+  top: 0;
+
+  z-index: 100;
+}
+
+
+/* LOGO */
+
+.logo {
+  text-align: center;
+  line-height: 0.9;
+}
+
+.logo-name {
+  display: block;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 34px;
+  font-weight: 600;
+
+  letter-spacing: 0.5px;
+}
+
+.logo-sub {
+  display: block;
+
+  margin-top: 8px;
+
+  color: var(--gold-dark);
+
+  font-size: 8px;
+  letter-spacing: 3.2px;
+}
+
+
+/* NAVIGATION */
+
+nav {
+  display: flex;
+  align-items: center;
+
+  gap: 27px;
+
+  font-size: 10px;
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+nav a {
+  transition: color 0.25s ease;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+
+/* BOOK BUTTON */
+
+.nav-book {
+  padding: 13px 21px;
+
+  color: white !important;
+  background: var(--black);
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.nav-book:hover {
+  background: var(--gold-dark);
+  transform: translateY(-2px);
+}
+
+
+/* MOBILE MENU BUTTON */
+
+.menu-button {
+  display: none;
+
+  border: none;
+  background: transparent;
+
+  font-size: 25px;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   GENERAL
+========================================= */
+
+.eyebrow {
+  margin-bottom: 22px;
+
+  color: var(--gold-dark);
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+.section {
+  padding: 105px 7%;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+  min-height: 730px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  background: var(--cream);
+}
+
+
+/* HERO TEXT */
+
+.hero-content {
+  padding: 90px 11%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  margin: 0 0 30px;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+
+  font-size: clamp(58px, 6vw, 86px);
+
+  font-weight: 500;
+
+  line-height: 0.88;
+
+  letter-spacing: -1px;
+}
+
+.hero h1 em {
+  color: var(--gold);
+
+  font-style: italic;
+}
+
+.hero-description {
+  max-width: 520px;
+
+  color: #5d5952;
+
+  font-size: 16px;
+}
+
+.hero-actions {
+  margin-top: 35px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 25px;
+}
+
+
+/* PRIMARY BUTTON */
+
+.primary-button {
+  padding: 16px 25px;
+
+  color: white;
+
+  background: var(--black);
+
+  font-size: 10px;
+
+  letter-spacing: 1.7px;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.primary-button:hover {
+  background: var(--gold-dark);
+
+  transform: translateY(-2px);
+}
+
+
+/* TEXT LINK */
+
+.text-link {
+  padding-bottom: 3px;
+
+  border-bottom: 1px solid var(--gold);
+
+  font-size: 11px;
+
+  letter-spacing: 1.2px;
+}
+
+
+/* =========================================
+   HERO VISUAL
+========================================= */
+
+.hero-visual {
+  min-height: 730px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 70% 30%,
+      #4a3a25 0%,
+      #1d1a16 35%,
+      #080808 75%
+    );
+}
+
+
+/* Gold circular detail */
+
+.hero-circle {
+  position: absolute;
+
+  width: 76%;
+  height: 116%;
+
+  right: -18%;
+  top: -8%;
+
+  border-left: 1px solid rgba(224, 194, 125, 0.75);
+
+  border-radius: 50%;
+
+  transform: rotate(8deg);
+}
+
+
+/* Gold diagonal */
+
+.hero-diagonal {
+  position: absolute;
+
+  width: 45%;
+  height: 1px;
+
+  left: 15%;
+  top: 38%;
+
+  background: var(--gold);
+
+  transform: rotate(-28deg);
+
+  box-shadow:
+    0 0 18px rgba(224, 194, 125, 0.25);
+}
+
+
+/* subtle glow */
+
+.hero-glow {
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  right: 18%;
+  top: 18%;
+
+  border-radius: 50%;
+
+  background: rgba(199, 161, 90, 0.08);
+
+  filter: blur(40px);
+}
+
+
+/* HERO CAPTION */
+
+.hero-caption {
+  position: absolute;
+
+  left: 9%;
+  bottom: 9%;
+
+  color: white;
+
+  z-index: 2;
+}
+
+.hero-caption span {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: var(--gold-light);
+
+  font-size: 9px;
+
+  letter-spacing: 3px;
+}
+
+.hero-caption strong {
+  font-family: "Cormorant Garamond", Georgia, serif;
+
+  font-size: 38px;
+
+  font-weight: 500;
+
+  line-height: 1;
+}
+
+
+/* VERTICAL BRAND */
+
+.hero-vertical {
+  position: absolute;
+
+  right: 7%;
+  bottom: 8%;
+
+  color: var(--gold-light);
+
+  font-size: 10px;
+
+  letter-spacing: 5px;
+
+  writing-mode: vertical-rl;
+}
+
+
+/* =========================================
+   GOLD DIVIDER
+========================================= */
+
+.gold-divider {
+  height: 5px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #a97d32,
+      #d5b66f,
+      #a97d32
+    );
+}
+
+
+/* =========================================
+   STATEMENT
+========================================= */
+
+.statement {
+  padding: 115px 8%;
+
+  text-align: center;
+}
+
+.statement h2 {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+
+  font-size: clamp(43px, 5vw, 65px);
+
+  font-weight: 500;
+
+  line-height: 1.02;
+}
+
+.statement h2 em {
+  color: var(--gold);
+
+  font-style: italic;
+}
+
+
+/* =========================================
+   SECTION HEADINGS
+========================================= */
+
+.section-heading {
+  margin-bottom: 48px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  gap: 50px;
+}
+
+.section-heading h2 {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+
+  font-size: 60px;
+
+  font-weight: 500;
+
+  line-height: 1;
+}
+
+.section-heading > p {
+  max-width: 430px;
+
+  margin: 0;
+
+  color: #6b665e;
+}
+
+
+/* =========================================
+   TREATMENTS
+========================================= */
+
+.treatment-grid {
+  display: grid;
+
+  grid-template-columns: 1.15fr 0.85fr;
+
+  grid-template-rows: 1fr 1fr;
+
+  gap: 18px;
+}
+
+
+/* CARD */
+
+.treatment-card {
+  min-height: 290px;
+
+  padding: 36px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.treatment-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.14);
+}
+
+
+/* LARGE CARD */
+
+.treatment-large {
+  grid-row: span 2;
+
+  min-height: 598px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: flex-end;
+}
+
+
+/* CARD COLORS */
+
+.treatment-dark {
+  color: white;
+
+  background: var(--black);
+}
+
+.treatment-light {
+  background: var(--cream);
+
+  border: 1px solid var(--line);
+}
+
+.treatment-gold {
+  color: white;
+
+  background: var(--gold);
+}
+
+.treatment-white {
+  background: white;
+
+  border: 1px solid var(--line);
+}
+
+
+/* DECORATION ON LARGE CARD */
+
+.treatment-large::after {
+  content: "";
+
+  position: absolute;
+
+  width: 350px;
+  height: 350px;
+
+  right: -90px;
+  top: 50px;
+
+  border: 1px solid rgba(224, 194, 125, 0.45);
+
+  border-radius: 50%;
+}
+
+
+/* CARD NUMBER */
+
+.treatment-number {
+  color: var(--gold-light);
+
+  font-size: 9px;
+
+  letter-spacing: 3px;
+}
+
+.treatment-light .treatment-number,
+.treatment-white .treatment-number {
+  color: var(--gold-dark);
+}
+
+
+/* CARD TITLE */
+
+.treatment-card h3 {
+  margin: 20px 0 12px;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+
+  font-size: 43px;
+
+  font-weight: 600;
+
+  line-height: 1;
+}
+
+
+/* CARD DESCRIPTION */
+
+.treatment-card p {
+  max-width: 420px;
+
+  font-size: 13px;
+
+  opacity: 0.82;
+}
+
+
+/* TREATMENT LIST */
+
+.treatment-card ul {
+  margin: 20px 0 0;
+
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px 18px;
+
+  list-style: none;
+
+  font-size: 11px;
+}
+
+.treatment-card li::before {
+  content: "✦ ";
+
+  color: var(--gold);
+}
+
+.treatment-gold li::before {
+  color: white;
+}
+
+
+/* =========================================
+   PHILOSOPHY
+========================================= */
+
+.philosophy {
+  padding: 115px 10%;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 90px;
+
+  color: white;
+
+  background: var(--black);
+}
+
+.philosophy h2 {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+
+  font-size: 64px;
+
+  font-weight: 500;
+
+  line-height: 0.95;
+}
+
+.philosophy h2 em {
+  color: var(--gold-light);
+
+  font-style: italic;
+}
+
+.philosophy-copy {
+  max-width: 500px;
+
+  color: #c9c5bd;
+}
+
+.gold-line {
+  width: 70px;
+  height: 2px;
+
+  margin: 25px 0;
+
+  background: var(--gold);
+}
+
+.philosophy-copy p {
+  margin-bottom: 20px;
+}
+
+
+/* =========================================
+   RESULTS
+========================================= */
+
+.results {
+  background: #f4f1e9;
+}
+
+.results-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+.result-placeholder {
+  aspect-ratio: 1 / 1;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  padding: 24px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #d6cfc0,
+      #a79b87
+    );
+}
+
+.result-placeholder::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.result-placeholder span {
+  position: relative;
+
+  z-index: 2;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================================
+   BOOKING
+========================================= */
+
+.booking {
+  padding: 110px 20px;
+
+  text-align: center;
+
+  color: white;
+
+  background: var(--gold);
+}
+
+.booking h2 {
+  margin: 0 0 38px;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+
+  font-size: 68px;
+
+  font-weight: 500;
+
+  line-height: 0.95;
+}
+
+.booking h2 em {
+  color: white;
+
+  font-style: italic;
+}
+
+
+/* BLACK BUTTON */
+
+.black-button {
+  display: inline-block;
+
+  padding: 16px 28px;
+
+  color: white;
+
+  background: var(--black);
+
+  font-size: 10px;
+
+  letter-spacing: 1.7px;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.black-button:hover {
+  background: #222;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 80px;
+}
+
+.contact-title h2 {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+
+  font-size: 60px;
+
+  font-weight: 500;
+
+  line-height: 1;
+}
+
+.contact-details {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 28px;
+}
+
+.contact-details strong {
+  color: var(--gold-dark);
+
+  font-size: 9px;
+
+  letter-spacing: 2px;
+}
+
+.contact-details p {
+  margin: 0;
+
+  font-size: 12px;
+}
+
+.contact-details a {
+  border-bottom: 1px solid var(--gold);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+  padding: 40px 6%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  color: #cfc9bf;
+
+  background: var(--deep-black);
+}
+
+footer p {
+  font-size: 9px;
+
+  letter-spacing: 1px;
+}
+
+.footer-logo {
+  color: white;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  nav {
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 62px;
+  }
+
+  .treatment-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-heading {
+    display: block;
+  }
+
+  .section-heading > p {
+    margin-top: 20px;
+  }
+
+  .philosophy {
+    gap: 45px;
+  }
+
+  .contact {
+    gap: 45px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  header {
+    height: 72px;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  nav {
+    display: none;
+
+    position: absolute;
+
+    top: 72px;
+    left: 0;
+    right: 0;
+
+    padding: 18px 7%;
+
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 0;
+
+    background: white;
+
+    border-bottom: 1px solid var(--line);
+  }
+
+  nav.mobile-open {
+    display: flex;
+  }
+
+  nav a {
+    padding: 13px 0;
+  }
+
+  .nav-book {
+    margin-top: 5px;
+
+    text-align: center;
+  }
+
+
+  /* HERO */
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content {
+    padding: 70px 8%;
+  }
+
+  .hero h1 {
+    font-size: 55px;
+  }
+
+  .hero-visual {
+    min-height: 500px;
+  }
+
+
+  /* STATEMENT */
+
+  .statement {
+    padding: 80px 7%;
+  }
+
+
+  /* SECTIONS */
+
+  .section {
+    padding: 75px 7%;
+  }
+
+  .section-heading h2 {
+    font-size: 48px;
+  }
+
+
+  /* TREATMENTS */
+
+  .treatment-grid {
+    display: block;
+  }
+
+  .treatment-card {
+    margin-bottom: 16px;
+
+    min-height: 300px;
+  }
+
+  .treatment-large {
+    min-height: 390px;
+  }
+
+
+  /* PHILOSOPHY */
+
+  .philosophy {
+    display: block;
+
+    padding: 75px 8%;
+  }
+
+  .philosophy h2 {
+    margin-bottom: 45px;
+
+    font-size: 52px;
+  }
+
+
+  /* RESULTS */
+
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* BOOKING */
+
+  .booking h2 {
+    font-size: 52px;
+  }
+
+
+  /* CONTACT */
+
+  .contact {
+    display: block;
+
+    padding: 75px 8%;
+  }
+
+  .contact-title h2 {
+    margin-bottom: 40px;
+
+    font-size: 50px;
+  }
+
+  .contact-details {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  /* FOOTER */
+
+  footer {
+    display: block;
+  }
+
+}
