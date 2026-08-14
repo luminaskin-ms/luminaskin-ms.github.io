@@ -3,778 +3,587 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>LuminaSkin Medical Spa</title>
-  <meta name="description" content="LuminaSkin Medical Spa — personalized aesthetic treatments.">
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: #171615;
-      background: #fcfbf8;
-      line-height: 1.6;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    /* HEADER */
-
-    header {
-      height: 82px;
-      background: white;
-      border-bottom: 1px solid #e5dfd5;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 7%;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    .logo {
-      text-align: center;
-      line-height: 1;
-    }
-
-    .logo-name {
-      font-family: Georgia, serif;
-      font-size: 32px;
-      letter-spacing: 1px;
-    }
-
-    .logo-sub {
-      display: block;
-      margin-top: 6px;
-      font-size: 8px;
-      letter-spacing: 3px;
-      color: #a37c3c;
-    }
-
-    nav {
-      display: flex;
-      align-items: center;
-      gap: 28px;
-      font-size: 11px;
-      letter-spacing: 1.3px;
-      text-transform: uppercase;
-    }
-
-    nav a:hover {
-      color: #a37c3c;
-    }
-
-    .book-button {
-      background: #171615;
-      color: white;
-      padding: 12px 20px;
-    }
-
-    /* HERO */
-
-    .hero {
-      min-height: 680px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      background: #f5f2eb;
-    }
-
-    .hero-text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 80px 10%;
-    }
-
-    .eyebrow {
-      font-size: 10px;
-      letter-spacing: 3px;
-      font-weight: bold;
-      margin-bottom: 22px;
-      color: #8e6d38;
-    }
-
-    .hero h1 {
-      font-family: Georgia, serif;
-      font-weight: normal;
-      font-size: 68px;
-      line-height: 1;
-      margin-bottom: 28px;
-    }
-
-    .gold {
-      color: #a37c3c;
-      font-style: italic;
-    }
-
-    .hero-description {
-      max-width: 500px;
-      color: #625e57;
-      font-size: 16px;
-    }
-
-    .hero-buttons {
-      margin-top: 35px;
-      display: flex;
-      align-items: center;
-      gap: 25px;
-    }
-
-    .primary-button {
-      background: #171615;
-      color: white;
-      padding: 15px 24px;
-      font-size: 10px;
-      letter-spacing: 1.5px;
-    }
-
-    .secondary-link {
-      font-size: 11px;
-      letter-spacing: 1px;
-      border-bottom: 1px solid #a37c3c;
-    }
-
-    .hero-image {
-      background: #171615;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .gold-circle {
-      position: absolute;
-      width: 390px;
-      height: 390px;
-      border: 1px solid #b08a4b;
-      border-radius: 50%;
-      right: 5%;
-      bottom: 7%;
-    }
-
-    .gold-line {
-      position: absolute;
-      width: 65%;
-      height: 1px;
-      background: #b08a4b;
-      left: 15%;
-      top: 35%;
-      transform: rotate(-30deg);
-    }
-
-    .vertical-text {
-      position: absolute;
-      right: 10%;
-      top: 12%;
-      color: #b08a4b;
-      font-family: Georgia, serif;
-      font-size: 34px;
-      line-height: 1.05;
-    }
-
-    /* GOLD STRIP */
-
-    .gold-strip {
-      background: #a37c3c;
-      color: white;
-      text-align: center;
-      padding: 14px;
-      font-size: 9px;
-      letter-spacing: 3px;
-    }
-
-    /* GENERAL SECTIONS */
-
-    section {
-      padding: 100px 8%;
-    }
-
-    .section-title {
-      max-width: 650px;
-      margin-bottom: 55px;
-    }
-
-    .section-title h2 {
-      font-family: Georgia, serif;
-      font-weight: normal;
-      font-size: 52px;
-      line-height: 1.05;
-      margin-bottom: 20px;
-    }
-
-    .section-title p {
-      color: #666159;
-    }
-
-    /* STATEMENT */
-
-    .statement {
-      text-align: center;
-      padding: 110px 20px;
-    }
-
-    .statement h2 {
-      font-family: Georgia, serif;
-      font-weight: normal;
-      font-size: 52px;
-    }
-
-    /* TREATMENTS */
-
-    .treatment-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-
-    .treatment-card {
-      background: white;
-      border: 1px solid #e3ddd3;
-      padding: 30px;
-      min-height: 350px;
-    }
-
-    .card-number {
-      color: #a37c3c;
-      font-size: 10px;
-      letter-spacing: 2px;
-    }
-
-    .treatment-card h3 {
-      font-family: Georgia, serif;
-      font-weight: normal;
-      font-size: 30px;
-      margin: 22px 0 12px;
-    }
-
-    .treatment-card p {
-      color: #69645c;
-      font-size: 13px;
-    }
-
-    .treatment-card ul {
-      list-style: none;
-      margin-top: 20px;
-      font-size: 12px;
-      line-height: 2;
-    }
-
-    .treatment-card li::before {
-      content: "— ";
-      color: #a37c3c;
-    }
-
-    /* ABOUT */
-
-    .about {
-      background: #171615;
-      color: white;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-    }
-
-    .about h2 {
-      font-family: Georgia, serif;
-      font-size: 52px;
-      font-weight: normal;
-      line-height: 1.05;
-    }
-
-    .about-text {
-      color: #d4d0c8;
-      max-width: 500px;
-    }
-
-    .about-text p {
-      margin-bottom: 20px;
-    }
-
-    /* BEFORE AFTER */
-
-    .gallery {
-      background: #f4f1ea;
-    }
-
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
-    .gallery-box {
-      aspect-ratio: 1 / 1;
-      background: #e8e3da;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #918a7f;
-      font-size: 10px;
-      letter-spacing: 2px;
-    }
-
-    /* BOOK */
-
-    .booking {
-      background: #a37c3c;
-      color: white;
-      text-align: center;
-    }
-
-    .booking h2 {
-      font-family: Georgia, serif;
-      font-weight: normal;
-      font-size: 58px;
-      line-height: 1.05;
-      margin-bottom: 35px;
-    }
-
-    .black-button {
-      display: inline-block;
-      background: #171615;
-      color: white;
-      padding: 15px 25px;
-      font-size: 10px;
-      letter-spacing: 1.5px;
-    }
-
-    /* CONTACT */
-
-    .contact {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-    }
-
-    .contact h2 {
-      font-family: Georgia, serif;
-      font-size: 52px;
-      font-weight: normal;
-    }
-
-    .contact-details {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
-    }
-
-    .contact-details strong {
-      font-size: 9px;
-      letter-spacing: 2px;
-      color: #9b763c;
-    }
-
-    .contact-details p {
-      font-size: 12px;
-    }
-
-    /* FOOTER */
-
-    footer {
-      background: #111;
-      color: #c9c4bb;
-      padding: 35px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    footer p {
-      font-size: 10px;
-    }
-
-    /* MOBILE */
-
-    @media (max-width: 900px) {
-      .treatment-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .hero h1 {
-        font-size: 55px;
-      }
-    }
-
-    @media (max-width: 700px) {
-
-      header {
-        height: 72px;
-      }
-
-      nav {
-        display: none;
-      }
-
-      .hero {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-text {
-        padding: 65px 8%;
-      }
-
-      .hero h1 {
-        font-size: 50px;
-      }
-
-      .hero-image {
-        height: 380px;
-      }
-
-      .treatment-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .about,
-      .contact {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-
-      .gallery-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .section-title h2,
-      .about h2,
-      .contact h2 {
-        font-size: 43px;
-      }
-
-      .booking h2 {
-        font-size: 45px;
-      }
-
-      footer {
-        display: block;
-      }
-    }
-  </style>
+  <meta
+    name="description"
+    content="LuminaSkin Medical Spa — personalized aesthetic treatments focused on balance, precision and naturally beautiful results."
+  >
+
+  <!-- Luxury editorial fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Our website styling -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  <a href="#home" class="logo">
-    <span class="logo-name">LuminaSkin</span>
-    <span class="logo-sub">MEDICAL SPA</span>
-  </a>
+  <!-- =========================
+       HEADER
+  ========================== -->
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#treatments">Treatments</a>
-    <a href="#about">About</a>
-    <a href="#gallery">Before & After</a>
-    <a href="#contact">Contact</a>
-    <a href="#booking" class="book-button">Book</a>
-  </nav>
-</header>
+  <header>
 
-<section id="home" class="hero">
+    <a href="#home" class="logo">
+      <span class="logo-name">LuminaSkin</span>
+      <span class="logo-sub">MEDICAL SPA</span>
+    </a>
 
-  <div class="hero-text">
+    <button
+      class="menu-button"
+      aria-label="Open navigation menu"
+      type="button"
+    >
+      ☰
+    </button>
 
-    <p class="eyebrow">LUMINASKIN · MEDICAL SPA</p>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#treatments">Treatments</a>
+      <a href="#about">About</a>
+      <a href="#results">Results</a>
+      <a href="#contact">Contact</a>
+      <a href="#booking" class="nav-book">Book</a>
+    </nav>
 
-    <h1>
-      Refined aesthetics.<br>
-      <span class="gold">Naturally you.</span>
-    </h1>
+  </header>
 
-    <p class="hero-description">
-      Personalized aesthetic treatments focused on balance,
-      precision and beautifully natural-looking results.
-    </p>
 
-    <div class="hero-buttons">
-      <a href="#booking" class="primary-button">
-        BOOK AN APPOINTMENT
+  <!-- =========================
+       HERO
+  ========================== -->
+
+  <main>
+
+    <section id="home" class="hero">
+
+      <div class="hero-content">
+
+        <p class="eyebrow">
+          LUMINASKIN · MEDICAL SPA
+        </p>
+
+        <h1>
+          Refined aesthetics.
+          <br>
+          <em>Naturally you.</em>
+        </h1>
+
+        <p class="hero-description">
+          Personalized aesthetic treatments focused on balance,
+          precision and beautifully natural-looking results.
+        </p>
+
+        <div class="hero-actions">
+
+          <a href="#booking" class="primary-button">
+            BOOK A CONSULTATION
+          </a>
+
+          <a href="#treatments" class="text-link">
+            Explore treatments →
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- Hero visual placeholder -->
+      <div class="hero-visual">
+
+        <div class="hero-glow"></div>
+
+        <div class="hero-circle"></div>
+
+        <div class="hero-diagonal"></div>
+
+        <div class="hero-caption">
+
+          <span>
+            MODERN AESTHETICS
+          </span>
+
+          <strong>
+            Precision.
+            <br>
+            Balance.
+            <br>
+            Confidence.
+          </strong>
+
+        </div>
+
+        <div class="hero-vertical">
+          LUMINASKIN
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Gold divider -->
+
+    <div class="gold-divider"></div>
+
+
+    <!-- =========================
+         STATEMENT
+    ========================== -->
+
+    <section class="statement">
+
+      <p class="eyebrow">
+        THE LUMINASKIN APPROACH
+      </p>
+
+      <h2>
+        Luxury is in the
+        <em>details.</em>
+      </h2>
+
+    </section>
+
+
+    <!-- =========================
+         TREATMENTS
+    ========================== -->
+
+    <section id="treatments" class="treatments section">
+
+      <div class="section-heading">
+
+        <div>
+
+          <p class="eyebrow">
+            OUR TREATMENTS
+          </p>
+
+          <h2>
+            Curated care.
+          </h2>
+
+        </div>
+
+        <p>
+          Explore our treatments by category.
+          Each treatment plan is personalized around
+          your features, goals and desired level of change.
+        </p>
+
+      </div>
+
+
+      <div class="treatment-grid">
+
+
+        <!-- INJECTABLES -->
+
+        <article class="treatment-card treatment-dark treatment-large">
+
+          <span class="treatment-number">
+            01 · INJECTABLES
+          </span>
+
+          <h3>
+            Injectables
+          </h3>
+
+          <p>
+            Refined aesthetic treatments for facial
+            expression, hydration, volume and rejuvenation.
+          </p>
+
+          <ul>
+
+            <li>Botox</li>
+
+            <li>Dysport</li>
+
+            <li>Dermal Fillers</li>
+
+            <li>Profhilo</li>
+
+            <li>Jalupro</li>
+
+            <li>Sculptra</li>
+
+          </ul>
+
+        </article>
+
+
+        <!-- FACIAL AESTHETICS -->
+
+        <article class="treatment-card treatment-light">
+
+          <span class="treatment-number">
+            02 · FACIAL AESTHETICS
+          </span>
+
+          <h3>
+            Facial Aesthetics
+          </h3>
+
+          <p>
+            Customized treatments designed around
+            facial harmony and your aesthetic goals.
+          </p>
+
+          <ul>
+
+            <li>Full Face Contouring</li>
+
+            <li>Facial Mesotherapy</li>
+
+          </ul>
+
+        </article>
+
+
+        <!-- HAIR -->
+
+        <article class="treatment-card treatment-gold">
+
+          <span class="treatment-number">
+            03 · HAIR &amp; SCALP
+          </span>
+
+          <h3>
+            Hair &amp; Scalp
+          </h3>
+
+          <p>
+            Scalp-focused aesthetic care designed to
+            support the appearance of healthier,
+            fuller-looking hair.
+          </p>
+
+          <ul>
+
+            <li>Hair Mesotherapy</li>
+
+          </ul>
+
+        </article>
+
+
+        <!-- SKIN -->
+
+        <article class="treatment-card treatment-white">
+
+          <span class="treatment-number">
+            04 · SKIN
+          </span>
+
+          <h3>
+            Skin
+          </h3>
+
+          <p>
+            Targeted treatments to support smoother,
+            refreshed-looking skin.
+          </p>
+
+          <ul>
+
+            <li>Microneedling</li>
+
+          </ul>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PHILOSOPHY / ABOUT
+    ========================== -->
+
+    <section id="about" class="philosophy">
+
+      <div class="philosophy-title">
+
+        <p class="eyebrow">
+          ABOUT LUMINASKIN
+        </p>
+
+        <h2>
+          Modern aesthetics.
+          <br>
+          <em>Personalized care.</em>
+        </h2>
+
+      </div>
+
+
+      <div class="philosophy-copy">
+
+        <div class="gold-line"></div>
+
+        <p>
+          At LuminaSkin Medical Spa, every treatment
+          begins with understanding your features,
+          goals and desired level of change.
+        </p>
+
+        <p>
+          Our approach is centered on thoughtful
+          treatment planning and results that feel
+          refined, balanced and uniquely yours.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         BEFORE & AFTER
+    ========================== -->
+
+    <section id="results" class="results section">
+
+      <div class="section-heading">
+
+        <div>
+
+          <p class="eyebrow">
+            RESULTS
+          </p>
+
+          <h2>
+            Before &amp; After
+          </h2>
+
+        </div>
+
+        <p>
+          Your approved treatment photos will be
+          displayed here. We can organize the gallery
+          by treatment as your collection grows.
+        </p>
+
+      </div>
+
+
+      <div class="results-grid">
+
+
+        <div class="result-placeholder">
+
+          <span>
+            RESULTS
+            <br>
+            COMING SOON
+          </span>
+
+        </div>
+
+
+        <div class="result-placeholder">
+
+          <span>
+            RESULTS
+            <br>
+            COMING SOON
+          </span>
+
+        </div>
+
+
+        <div class="result-placeholder">
+
+          <span>
+            RESULTS
+            <br>
+            COMING SOON
+          </span>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         BOOKING
+    ========================== -->
+
+    <section id="booking" class="booking">
+
+      <p class="eyebrow">
+        READY WHEN YOU ARE
+      </p>
+
+      <h2>
+        Your aesthetic journey
+        <br>
+        <em>starts here.</em>
+      </h2>
+
+      <a href="#contact" class="black-button">
+        BOOK A CONSULTATION
       </a>
 
-      <a href="#treatments" class="secondary-link">
-        Explore treatments →
-      </a>
-    </div>
+    </section>
 
-  </div>
 
-  <div class="hero-image">
-    <div class="gold-circle"></div>
-    <div class="gold-line"></div>
+    <!-- =========================
+         CONTACT
+    ========================== -->
 
-    <div class="vertical-text">
-      L<br>
-      U<br>
-      M<br>
-      I<br>
-      N<br>
-      A
-    </div>
-  </div>
+    <section id="contact" class="contact section">
 
-</section>
+      <div class="contact-title">
 
-<div class="gold-strip">
-  BEAUTY · BALANCE · CONFIDENCE
-</div>
+        <p class="eyebrow">
+          CONTACT
+        </p>
 
-<section class="statement">
+        <h2>
+          Let's connect.
+        </h2>
 
-  <p class="eyebrow">
-    THE LUMINASKIN APPROACH
-  </p>
+      </div>
 
-  <h2>
-    Enhance what makes you,
-    <span class="gold">you.</span>
-  </h2>
 
-</section>
+      <div class="contact-details">
 
-<section id="treatments">
+        <div>
 
-  <div class="section-title">
+          <strong>
+            LOCATION
+          </strong>
 
-    <p class="eyebrow">OUR TREATMENTS</p>
+          <p>
+            Coming soon
+          </p>
 
-    <h2>
-      Curated aesthetic care.
-    </h2>
+        </div>
 
-    <p>
-      Thoughtfully selected treatments for facial aesthetics,
-      skin and hair.
-    </p>
 
-  </div>
+        <div>
 
-  <div class="treatment-grid">
+          <strong>
+            PHONE
+          </strong>
 
-    <div class="treatment-card">
+          <p>
+            Coming soon
+          </p>
 
-      <span class="card-number">01</span>
+        </div>
 
-      <h3>Injectables</h3>
 
-      <p>
-        Precision-focused aesthetic treatments for facial
-        expression, hydration, volume and rejuvenation.
-      </p>
+        <div>
 
-      <ul>
-        <li>Botox</li>
-        <li>Dysport</li>
-        <li>Dermal Fillers</li>
-        <li>Profhilo</li>
-        <li>Jalupro</li>
-        <li>Sculptra</li>
-      </ul>
+          <strong>
+            EMAIL
+          </strong>
 
-    </div>
+          <p>
+            Coming soon
+          </p>
 
-    <div class="treatment-card">
+        </div>
 
-      <span class="card-number">02</span>
 
-      <h3>Facial Aesthetics</h3>
+        <div>
 
-      <p>
-        Customized treatments designed around facial harmony
-        and your aesthetic goals.
-      </p>
+          <strong>
+            INSTAGRAM
+          </strong>
 
-      <ul>
-        <li>Full Face Contouring</li>
-        <li>Facial Mesotherapy</li>
-      </ul>
+          <p>
+            <a
+              href="https://www.instagram.com/luminaskin.ms/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @luminaskin.ms
+            </a>
+          </p>
 
-    </div>
+        </div>
 
-    <div class="treatment-card">
+      </div>
 
-      <span class="card-number">03</span>
+    </section>
 
-      <h3>Hair & Scalp</h3>
+  </main>
 
-      <p>
-        Scalp-focused aesthetic care designed to support the
-        appearance of healthier, fuller-looking hair.
-      </p>
 
-      <ul>
-        <li>Hair Mesotherapy</li>
-      </ul>
+  <!-- =========================
+       FOOTER
+  ========================== -->
 
-    </div>
+  <footer>
 
-    <div class="treatment-card">
+    <a href="#home" class="logo footer-logo">
 
-      <span class="card-number">04</span>
+      <span class="logo-name">
+        LuminaSkin
+      </span>
 
-      <h3>Skin</h3>
+      <span class="logo-sub">
+        MEDICAL SPA
+      </span>
 
-      <p>
-        Targeted skin treatment to support smoother,
-        refreshed-looking skin.
-      </p>
-
-      <ul>
-        <li>Microneedling</li>
-      </ul>
-
-    </div>
-
-  </div>
-
-</section>
-
-<section id="about" class="about">
-
-  <div>
-
-    <p class="eyebrow">
-      ABOUT LUMINASKIN
-    </p>
-
-    <h2>
-      Modern aesthetics.<br>
-      <span class="gold">Personalized care.</span>
-    </h2>
-
-  </div>
-
-  <div class="about-text">
+    </a>
 
     <p>
-      At LuminaSkin Medical Spa, every treatment begins with
-      understanding your features, goals and desired level of change.
+      © 2026 LuminaSkin Medical Spa
     </p>
 
-    <p>
-      Our approach is centered on thoughtful treatment planning
-      and results that feel refined, balanced and uniquely yours.
-    </p>
+  </footer>
 
-  </div>
 
-</section>
+  <!-- =========================
+       MOBILE NAVIGATION
+  ========================== -->
 
-<section id="gallery" class="gallery">
+  <script>
 
-  <div class="section-title">
+    const menuButton =
+      document.querySelector(".menu-button");
 
-    <p class="eyebrow">RESULTS</p>
+    const navigation =
+      document.querySelector("nav");
 
-    <h2>
-      Before & After
-    </h2>
+    menuButton.addEventListener("click", function () {
 
-    <p>
-      Your approved treatment photos will be displayed here.
-    </p>
+      navigation.classList.toggle("mobile-open");
 
-  </div>
+    });
 
-  <div class="gallery-grid">
 
-    <div class="gallery-box">
-      PHOTO<br>COMING SOON
-    </div>
+    document
+      .querySelectorAll("nav a")
+      .forEach(function (link) {
 
-    <div class="gallery-box">
-      PHOTO<br>COMING SOON
-    </div>
+        link.addEventListener("click", function () {
 
-    <div class="gallery-box">
-      PHOTO<br>COMING SOON
-    </div>
+          navigation.classList.remove("mobile-open");
 
-  </div>
+        });
 
-</section>
+      });
 
-<section id="booking" class="booking">
-
-  <p class="eyebrow">
-    READY WHEN YOU ARE
-  </p>
-
-  <h2>
-    Your aesthetic journey<br>
-    <span>starts here.</span>
-  </h2>
-
-  <a href="#contact" class="black-button">
-    BOOK AN APPOINTMENT
-  </a>
-
-</section>
-
-<section id="contact" class="contact">
-
-  <div>
-
-    <p class="eyebrow">CONTACT</p>
-
-    <h2>
-      Let's connect.
-    </h2>
-
-    <p>
-      Clinic details will be added here.
-    </p>
-
-  </div>
-
-  <div class="contact-details">
-
-    <p>
-      <strong>LOCATION</strong><br>
-      Coming soon
-    </p>
-
-    <p>
-      <strong>PHONE</strong><br>
-      Coming soon
-    </p>
-
-    <p>
-      <strong>EMAIL</strong><br>
-      Coming soon
-    </p>
-
-    <p>
-      <strong>INSTAGRAM</strong><br>
-      @luminaskin.ms
-    </p>
-
-  </div>
-
-</section>
-
-<footer>
-
-  <div class="logo">
-    <span class="logo-name">LuminaSkin</span>
-    <span class="logo-sub">MEDICAL SPA</span>
-  </div>
-
-  <p>
-    © 2026 LuminaSkin Medical Spa
-  </p>
-
-</footer>
+  </script>
 
 </body>
 </html>
