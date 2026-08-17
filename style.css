@@ -1601,6 +1601,58 @@ footer p {
 
 html {
   scroll-behavior: smooth;
+}/* =========================================
+   BOOK A CONSULTATION BUTTON
+========================================= */
+
+.black-button {
+  display: inline-block;
+
+  padding: 16px 30px;
+
+  color: #111;
+  background: #e2c98f;
+
+  text-decoration: none;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  border: 1px solid #e2c98f;
+
+  cursor: pointer;
+
+  position: relative;
+  z-index: 10;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.black-button:hover {
+  background: transparent;
+  color: #111;
+
+  transform: translateY(-2px);
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .black-button {
+    display: inline-block;
+
+    padding: 15px 24px;
+
+    font-size: 9px;
+  }
+
 }
 }
 }
