@@ -1721,6 +1721,10 @@ html {
    LUMINASKIN LOGO
 ========================================= */
 
+/* =========================================
+   LUMINASKIN LOGO
+========================================= */
+
 .logo {
   display: flex;
   align-items: center;
@@ -1752,8 +1756,6 @@ header {
   .logo-image {
     width: 90px;
   }
-
-}
 
 }
 
