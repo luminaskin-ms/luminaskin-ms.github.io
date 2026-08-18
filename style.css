@@ -1714,25 +1714,6 @@ html {
   .instagram-section h2 {
     font-size: 38px;
   }
-  /* =========================================
-   LUMINASKIN LOGO
-========================================= */
-
-/* =========================================
-   LUMINASKIN LOGO
-========================================= */
-
-.logo {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-
-.logo-image {
-  display: block;
-  width: 105px;
-  height: auto;
-}
 
 
 /* =========================================
