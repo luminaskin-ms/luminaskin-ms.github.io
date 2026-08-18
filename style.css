@@ -73,29 +73,26 @@ header {
 /* LOGO */
 
 .logo {
-  text-align: center;
-  line-height: 0.9;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 
-.logo-name {
+.logo-image {
   display: block;
-
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 34px;
-  font-weight: 600;
-
-  letter-spacing: 0.5px;
+  width: 105px;
+  height: auto;
 }
 
-.logo-sub {
-  display: block;
 
-  margin-top: 8px;
+/* MOBILE LOGO */
 
-  color: var(--gold-dark);
+@media (max-width: 700px) {
 
-  font-size: 8px;
-  letter-spacing: 3.2px;
+  .logo-image {
+    width: 90px;
+  }
+
 }
 
 
