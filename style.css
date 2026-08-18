@@ -1668,6 +1668,57 @@ html {
 .location-link:hover {
   opacity: 0.6;
 }
+   /* =========================================
+   INSTAGRAM SECTION
+========================================= */
+
+.instagram-section {
+  padding: 100px 7vw;
+  text-align: center;
+}
+
+.instagram-section h2 {
+  margin: 15px auto 35px;
+}
+
+.instagram-button {
+  display: inline-block;
+
+  padding: 15px 28px;
+
+  border: 1px solid currentColor;
+
+  text-decoration: none;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.instagram-button:hover {
+  background: #111;
+  color: #fff;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .instagram-section {
+    padding: 75px 24px;
+  }
+
+  .instagram-section h2 {
+    font-size: 38px;
+  }
+
+}
 
 }
 }
