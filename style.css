@@ -426,33 +426,73 @@ nav a:hover {
     );
 }
 
-
-/* =========================================
-   STATEMENT
+ /* =========================================
+   STATEMENT — EDITORIAL IMAGE
 ========================================= */
 
 .statement {
-  padding: 115px 8%;
+  padding: 0;
 
-  text-align: center;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  min-height: 620px;
+
+  text-align: left;
+
+  background: var(--cream);
 }
 
-.statement h2 {
-  margin: 0;
+.statement-image {
+  position: relative;
 
-  font-family: "Cormorant Garamond", Georgia, serif;
+  min-height: 620px;
 
-  font-size: clamp(43px, 5vw, 65px);
-
-  font-weight: 500;
-
-  line-height: 1.02;
+  overflow: hidden;
 }
 
-.statement h2 em {
-  color: var(--gold);
+.statement-image img {
+  width: 100%;
+  height: 100%;
 
-  font-style: italic;
+  display: block;
+
+  object-fit: cover;
+}
+
+.statement-content {
+  padding: 80px 10%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.statement-content h2 {
+  max-width: 520px;
+}
+
+@media (max-width: 700px) {
+
+  .statement {
+    display: block;
+  }
+
+  .statement-image {
+    min-height: 470px;
+  }
+
+  .statement-content {
+    padding: 75px 8%;
+  }
+
+  .statement-content h2 {
+    font-size: 48px;
+  }
+
 }
 
 
