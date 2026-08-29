@@ -2156,6 +2156,12 @@ footer {
    BEFORE & AFTER RESULTS
 ========================================= */
 
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
 .result-card {
   position: relative;
   overflow: hidden;
@@ -2166,30 +2172,42 @@ footer {
 .result-card img {
   display: block;
   width: 100%;
-  height: auto;
-  aspect-ratio: 1 / 1;
+  height: 270px;
   object-fit: cover;
+
+  transition: transform 0.35s ease;
+}
+
+.result-card:hover img {
+  transform: scale(1.03);
 }
 
 .result-card span {
   display: block;
-  padding: 15px 18px;
+  padding: 13px 12px;
 
   color: var(--gold-dark);
 
-  font-size: 9px;
+  font-size: 8px;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 
   background: white;
 }
 
-.result-card:hover img {
-  transform: scale(1.02);
-}
 
-.result-card img {
-  transition: transform 0.35s ease;
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .results-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .result-card img {
+    height: 300px;
+  }
+
 }
 
 
@@ -2198,7 +2216,17 @@ footer {
 @media (max-width: 700px) {
 
   .results-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .result-card img {
+    height: 220px;
+  }
+
+  .result-card span {
+    padding: 11px 8px;
+    font-size: 7px;
   }
 
 }
