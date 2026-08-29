@@ -2152,5 +2152,54 @@ footer {
     min-height: 430px;
   }
 
+}/* =========================================
+   BEFORE & AFTER RESULTS
+========================================= */
+
+.result-card {
+  position: relative;
+  overflow: hidden;
+  background: white;
+  border: 1px solid var(--line);
+}
+
+.result-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.result-card span {
+  display: block;
+  padding: 15px 18px;
+
+  color: var(--gold-dark);
+
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 2px;
+
+  background: white;
+}
+
+.result-card:hover img {
+  transform: scale(1.02);
+}
+
+.result-card img {
+  transition: transform 0.35s ease;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+
 }
 }
