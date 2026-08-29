@@ -2228,6 +2228,74 @@ footer {
     padding: 11px 8px;
     font-size: 7px;
   }
+/* =========================================
+   FINAL BEFORE & AFTER GALLERY FIX
+========================================= */
 
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.result-card {
+  width: 100%;
+  min-width: 0;
+
+  overflow: hidden;
+
+  background: #fff;
+  border: 1px solid var(--line);
+}
+
+.result-card img {
+  display: block;
+
+  width: 100%;
+  height: 240px;
+
+  object-fit: cover;
+}
+
+.result-card span {
+  display: block;
+
+  padding: 12px 15px;
+
+  color: var(--gold-dark);
+
+  font-size: 8px;
+  font-weight: 600;
+
+  letter-spacing: 1.5px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .results-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .result-card img {
+    height: 180px;
+  }
+
+  .result-card span {
+    padding: 10px 8px;
+    font-size: 7px;
+  }
+
+}
 }
 }
