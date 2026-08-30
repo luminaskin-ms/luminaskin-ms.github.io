@@ -2147,52 +2147,61 @@ footer {
    BEFORE & AFTER — COMPACT UNIFORM GALLERY
 ========================================= */
 
+```css
 .results-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 160px);
-  justify-content: center;
-  gap: 18px;
-
-  width: 100%;
-  max-width: 340px;
-  margin: 0 auto;
+  display: grid !important;
+  grid-template-columns: repeat(2, 160px) !important;
+  justify-content: center !important;
+  gap: 18px !important;
+  width: 100% !important;
+  max-width: 340px !important;
+  margin: 0 auto !important;
 }
 
-.result-card {
-  width: 160px;
-  overflow: hidden;
-
-  background: #f8f6f1;
-  border: 1px solid var(--line);
+.results-grid .result-card {
+  width: 160px !important;
+  max-width: 160px !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
 }
 
-.result-card img {
+.results-grid .result-card img {
+  display: block !important;
+  width: 160px !important;
+  max-width: 160px !important;
+  height: 160px !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  box-sizing: border-box !important;
+}
+
+.results-grid .result-card span {
   display: block;
-
-  width: 160px;
-  height: 160px;
-
-  object-fit: contain;
-  object-position: center;
-}
-
-.result-card span {
-  display: block;
-
   padding: 8px 10px;
-
-  color: var(--gold-dark);
-  background: #fff;
-
   font-size: 8px;
-  font-weight: 600;
   letter-spacing: 1.5px;
 }
 
-
-/* MOBILE */
-
 @media (max-width: 700px) {
+
+  .results-grid {
+    grid-template-columns: repeat(2, 140px) !important;
+    max-width: 290px !important;
+    gap: 10px !important;
+  }
+
+  .results-grid .result-card {
+    width: 140px !important;
+    max-width: 140px !important;
+  }
+
+  .results-grid .result-card img {
+    width: 140px !important;
+    max-width: 140px !important;
+    height: 140px !important;
+  }
+}
+```
 
   .results-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
