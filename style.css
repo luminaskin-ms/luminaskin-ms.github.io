@@ -2183,5 +2183,61 @@ footer {
 
  150px;
   }
+/* =========================================
+   BEFORE & AFTER GALLERY
+========================================= */
 
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 280px);
+  justify-content: center;
+  gap: 25px;
+
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.result-card {
+  width: 280px;
+  overflow: hidden;
+
+  background: #fff;
+  border: 1px solid var(--line);
+}
+
+.result-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.result-card span {
+  display: block;
+  padding: 12px 15px;
+
+  color: var(--gold-dark);
+  background: #fff;
+
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .results-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    max-width: 100%;
+  }
+
+  .result-card {
+    width: 100%;
+  }
+
+}
 }
