@@ -2142,23 +2142,24 @@ footer {
   }
 
 }
+
 /* =========================================
-   BEFORE & AFTER — UNIFORM GALLERY
+   BEFORE & AFTER — COMPACT UNIFORM GALLERY
 ========================================= */
 
 .results-grid {
   display: grid;
-  grid-template-columns: repeat(2, 220px);
+  grid-template-columns: repeat(2, 160px);
   justify-content: center;
-  gap: 22px;
+  gap: 18px;
 
   width: 100%;
-  max-width: 470px;
+  max-width: 340px;
   margin: 0 auto;
 }
 
 .result-card {
-  width: 220px;
+  width: 160px;
   overflow: hidden;
 
   background: #f8f6f1;
@@ -2168,8 +2169,8 @@ footer {
 .result-card img {
   display: block;
 
-  width: 220px;
-  height: 220px;
+  width: 160px;
+  height: 160px;
 
   object-fit: contain;
   object-position: center;
@@ -2178,7 +2179,7 @@ footer {
 .result-card span {
   display: block;
 
-  padding: 10px 12px;
+  padding: 8px 10px;
 
   color: var(--gold-dark);
   background: #fff;
@@ -2206,7 +2207,11 @@ footer {
 
   .result-card img {
     width: 100%;
-    height: 150px;
+    height: 120px;
+  }
+}
+```
+
   }
 
 }
