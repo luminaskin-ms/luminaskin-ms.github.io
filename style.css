@@ -2147,7 +2147,10 @@ footer {
    BEFORE & AFTER — COMPACT UNIFORM GALLERY
 ========================================= */
 
-```css
+.results-grid {
+  transform: scale(0.7);
+  transform-origin: top center;
+}
 .results-grid {
   display: grid !important;
   grid-template-columns: repeat(2, 160px) !important;
