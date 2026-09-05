@@ -1,30 +1,158 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- <title>LuminaSkin Medical Spa | Richmond Hill, ON</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
- <meta
-  name="description"
-  content="LuminaSkin Medical Spa in Richmond Hill, Ontario, offering personalized Botox, Dysport, dermal fillers, skin boosters, microneedling and facial aesthetics."
->
+  <title>LuminaSkin Medical Spa | Aesthetic Treatments in Richmond Hill, ON</title>
 
-  <!-- Luxury editorial fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta
+    name="description"
+    content="LuminaSkin Medical Spa in Richmond Hill, Ontario, offers personalized Botox, Dysport, dermal fillers, skin boosters, Profhilo, Jalupro, microneedling, facial aesthetics and hair mesotherapy."
+  >
+
+  <meta
+    name="robots"
+    content="index, follow"
+  >
+
+  <link
+    rel="canonical"
+    href="https://luminaskin-ms.ca/"
+  >
+
+
+  <!-- =========================
+       OPEN GRAPH / SOCIAL SHARING
+  ========================== -->
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:title"
+    content="LuminaSkin Medical Spa | Aesthetic Treatments in Richmond Hill"
+  >
+
+  <meta
+    property="og:description"
+    content="Personalized aesthetic treatments in Richmond Hill, including Botox, Dysport, dermal fillers, skin boosters, microneedling and facial aesthetics."
+  >
+
+  <meta
+    property="og:url"
+    content="https://luminaskin-ms.ca/"
+  >
+
+  <meta
+    property="og:image"
+    content="https://luminaskin-ms.ca/luminaskin-statement.JPG"
+  >
+
+  <meta
+    property="og:site_name"
+    content="LuminaSkin Medical Spa"
+  >
+
+
+  <!-- =========================
+       TWITTER / X
+  ========================== -->
+
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  >
+
+  <meta
+    name="twitter:title"
+    content="LuminaSkin Medical Spa | Richmond Hill, ON"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Personalized aesthetic treatments at LuminaSkin Medical Spa in Richmond Hill."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://luminaskin-ms.ca/luminaskin-statement.JPG"
+  >
+
+
+  <!-- =========================
+       LUXURY EDITORIAL FONTS
+  ========================== -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
 
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap"
     rel="stylesheet"
   >
 
-  <!-- Our website styling -->
-  <link rel="stylesheet" href="style.css">
+
+  <!-- =========================
+       WEBSITE STYLING
+  ========================== -->
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+
+  <!-- =========================
+       LOCAL BUSINESS STRUCTURED DATA
+  ========================== -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "@id": "https://luminaskin-ms.ca/#medicalspa",
+    "name": "LuminaSkin Medical Spa",
+    "url": "https://luminaskin-ms.ca/",
+    "image": "https://luminaskin-ms.ca/luminaskin-statement.JPG",
+    "telephone": "+1-437-431-1150",
+    "email": "luminaskin.ms@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "10376 Yonge St",
+      "addressLocality": "Richmond Hill",
+      "addressRegion": "ON",
+      "postalCode": "L4C 3B8",
+      "addressCountry": "CA"
+    },
+    "sameAs": [
+      "https://www.instagram.com/luminaskin.ms/"
+    ]
+  }
+  </script>
+
 </head>
 
+
 <body>
+
 
   <!-- =========================
        HEADER
@@ -32,15 +160,20 @@
 
   <header>
 
-   <a href="#home" class="logo">
+    <a
+      href="#home"
+      class="logo"
+      aria-label="LuminaSkin Medical Spa Home"
+    >
 
-  <img
-  src="luminaskin-logo-header.png"
-    alt="LuminaSkin Medical Spa"
-    class="logo-image"
-  >
+      <img
+        src="luminaskin-logo-header.png"
+        alt="LuminaSkin Medical Spa logo"
+        class="logo-image"
+      >
 
-</a>
+    </a>
+
 
     <button
       class="menu-button"
@@ -50,27 +183,56 @@
       ☰
     </button>
 
-    <nav>
-      <a href="#home">Home</a>
-     <a href="treatments.html">
-  Treatments
-</a>
-      <a href="#about">About</a>
-      <a href="#results">Results</a>
-      <a href="#contact">Contact</a>
-      <a href="#booking" class="nav-book">Book</a>
+
+    <nav aria-label="Main navigation">
+
+      <a
+        href="#home"
+        aria-current="page"
+      >
+        Home
+      </a>
+
+      <a href="treatments.html">
+        Treatments
+      </a>
+
+      <a href="#about">
+        About
+      </a>
+
+      <a href="#results">
+        Results
+      </a>
+
+      <a href="#contact">
+        Contact
+      </a>
+
+      <a
+        href="#booking"
+        class="nav-book"
+      >
+        Book
+      </a>
+
     </nav>
 
   </header>
 
 
-  <!-- =========================
-       HERO
-  ========================== -->
 
   <main>
 
-    <section id="home" class="hero">
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section
+      id="home"
+      class="hero"
+    >
 
       <div class="hero-content">
 
@@ -78,24 +240,35 @@
           LUMINASKIN · MEDICAL SPA
         </p>
 
+
         <h1>
           Refined aesthetics.
           <br>
           <em>Naturally you.</em>
         </h1>
 
+
         <p class="hero-description">
-          Personalized aesthetic treatments focused on balance,
-          precision and beautifully natural-looking results.
+          Personalized aesthetic treatments in Richmond Hill,
+          focused on balance, precision and beautifully
+          natural-looking results.
         </p>
+
 
         <div class="hero-actions">
 
-        <a href="#contact" class="black-button">
-  BOOK A CONSULTATION
-</a>
+          <a
+            href="#contact"
+            class="black-button"
+          >
+            BOOK A CONSULTATION
+          </a>
 
-          <a href="#treatments" class="text-link">
+
+          <a
+            href="#treatments"
+            class="text-link"
+          >
             Explore treatments →
           </a>
 
@@ -104,14 +277,19 @@
       </div>
 
 
-      <!-- Hero visual placeholder -->
-      <div class="hero-visual">
+      <!-- Hero visual -->
+
+      <div
+        class="hero-visual"
+        aria-hidden="true"
+      >
 
         <div class="hero-glow"></div>
 
         <div class="hero-circle"></div>
 
         <div class="hero-diagonal"></div>
+
 
         <div class="hero-caption">
 
@@ -129,6 +307,7 @@
 
         </div>
 
+
         <div class="hero-vertical">
           LUMINASKIN
         </div>
@@ -138,458 +317,549 @@
     </section>
 
 
+
     <!-- Gold divider -->
 
     <div class="gold-divider"></div>
+
 
 
     <!-- =========================
          STATEMENT
     ========================== -->
 
-   <section class="statement">
+    <section class="statement">
 
-  <div class="statement-image">
+      <div class="statement-image">
 
-    <img
-      src="luminaskin-statement.JPG"
-      alt="Elegant close-up beauty portrait"
-    >
+        <img
+          src="luminaskin-statement.JPG"
+          alt="LuminaSkin Medical Spa beauty and skin aesthetics"
+          loading="lazy"
+        >
 
-  </div>
+      </div>
 
-  <div class="statement-content">
 
-    <p class="eyebrow">
-      THE LUMINASKIN APPROACH
-    </p>
+      <div class="statement-content">
 
-    <h2>
-      Luxury is in the
-      <em>details.</em>
-    </h2>
+        <p class="eyebrow">
+          THE LUMINASKIN APPROACH
+        </p>
 
-  </div>
+        <h2>
+          Luxury is in the
+          <em>details.</em>
+        </h2>
 
-</section>
+      </div>
+
+    </section>
+
 
 
     <!-- =========================
          TREATMENTS
     ========================== -->
 
-  <!-- =========================
-     TREATMENTS
-========================== -->
-
-<section id="treatments" class="treatments section">
-
-  <div class="section-heading">
-
-    <div>
-
-      <p class="eyebrow">
-        OUR TREATMENTS
-      </p>
-
-      <h2>
-        Curated care.
-      </h2>
-
-    </div>
-
-    <p>
-      Every treatment is thoughtfully selected and
-      personalized to your features, goals and
-      desired level of change.
-    </p>
-
-  </div>
-
-
-  <div class="treatment-grid">
-
-
-    <!-- =====================
-         INJECTABLES
-    ====================== -->
-
-   <a
-  href="treatments.html#injectables"
-  class="treatment-card treatment-dark treatment-large"
->
-
-      <span class="treatment-number">
-        01 · INJECTABLES
-      </span>
-
-      <h3>
-        Injectables
-      </h3>
-
-      <p>
-        Refined injectable treatments designed to
-        enhance, restore and rejuvenate while
-        preserving natural-looking facial harmony.
-      </p>
-
-
-      <div class="treatment-group">
-
-        <h4>
-          BOTULINUM TOXIN
-        </h4>
-
-        <ul>
-
-          <li>Botox</li>
-
-          <li>Dysport</li>
-
-        </ul>
-
-      </div>
-
-
-      <div class="treatment-group">
-
-        <h4>
-          DERMAL FILLERS
-        </h4>
-
-        <ul>
-
-          <li>Lip Filler</li>
-
-          <li>Cheek Filler</li>
-
-          <li>Chin Filler</li>
-
-          <li>Under-Eye Filler</li>
-
-          <li>Full Face Contouring</li>
-
-        </ul>
-
-      </div>
-
-
-      <div class="treatment-group">
-
-        <h4>
-          SKIN REJUVENATION
-        </h4>
-
-        <ul>
-
-          <li>Skin Booster</li>
-
-          <li>Profhilo</li>
-
-          <li>Jalupro</li>
-
-          <li>Sculptra</li>
-
-        </ul>
-
-      </div>
-
-  </a>
-
-
-    <!-- =====================
-         FACIAL AESTHETICS
-    ====================== -->
-
-   <a
-  href="treatments.html#facial-aesthetics"
-  class="treatment-card treatment-light"
->
-
-      <span class="treatment-number">
-        02 · FACIAL AESTHETICS
-      </span>
-
-      <h3>
-        Facial Aesthetics
-      </h3>
-
-      <p>
-        Personalized approaches designed around
-        facial balance, proportion and your individual
-        aesthetic goals.
-      </p>
-
-
-      <div class="treatment-group">
-
-        <h4>
-          MESOTHERAPY
-        </h4>
-
-        <ul>
-
-          <li>Facial Mesotherapy</li>
-
-        </ul>
-
-      </div>
-
-  </a>
-
-
-    <!-- =====================
-         HAIR & SCALP
-    ====================== -->
-
-   <a
-  href="treatments.html#hair-scalp"
-  class="treatment-card treatment-gold"
->
-
-      <span class="treatment-number">
-        03 · HAIR &amp; SCALP
-      </span>
-
-      <h3>
-        Hair &amp; Scalp
-      </h3>
-
-      <p>
-        Targeted aesthetic care designed to support
-        the appearance of healthier, fuller-looking
-        hair and a revitalized scalp.
-      </p>
-
-
-      <div class="treatment-group">
-
-        <h4>
-          HAIR REJUVENATION
-        </h4>
-
-        <ul>
-
-          <li>Hair Mesotherapy</li>
-
-        </ul>
-
-      </div>
-
-      </a>
-
-
-    <!-- =====================
-         SKIN
-    ====================== -->
-
-    <a
-  href="treatments.html#skin"
-  class="treatment-card treatment-white"
->
-
-      <span class="treatment-number">
-        04 · SKIN
-      </span>
-
-      <h3>
-        Skin
-      </h3>
-
-      <p>
-        Targeted treatments designed to support
-        smoother, refreshed and revitalized-looking skin.
-      </p>
-
-
-      <div class="treatment-group">
-
-        <h4>
-          SKIN REJUVENATION
-        </h4>
-
-        <ul>
-
-          <li>Microneedling</li>
-
-        </ul>
-
-      </div>
-
-   </a>
-
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     ABOUT LUMINASKIN
-========================== -->
-
-<!-- =========================
-     ABOUT LUMINASKIN
-========================== -->
-
-<!-- =========================
-     ABOUT LUMINASKIN
-========================== -->
-
-<section id="about" class="philosophy">
-
-  <div class="philosophy-image">
-
-    <img
-      src="luminaskin-about.JPG"
-      alt="Close-up of glowing skin"
+    <section
+      id="treatments"
+      class="treatments section"
     >
 
-  </div>
+      <div class="section-heading">
+
+        <div>
+
+          <p class="eyebrow">
+            OUR TREATMENTS
+          </p>
+
+          <h2>
+            Curated care.
+          </h2>
+
+        </div>
 
 
-  <div class="philosophy-content">
+        <p>
+          Every treatment is thoughtfully selected and
+          personalized to your features, goals and
+          desired level of change.
+        </p>
 
-    <div class="philosophy-title">
-
-      <p class="eyebrow">
-        ABOUT LUMINASKIN
-      </p>
-
-      <h2>
-        Modern aesthetics.
-        <br>
-        <em>Personalized care.</em>
-      </h2>
-
-    </div>
+      </div>
 
 
-    <div class="philosophy-copy">
 
-      <div class="gold-line"></div>
+      <div class="treatment-grid">
 
-      <p>
-        At LuminaSkin Medical Spa, every treatment
-        begins with understanding your features,
-        goals and desired level of change.
-      </p>
 
-      <p>
-        Our approach is centered on thoughtful
-        treatment planning and results that feel
-        refined, balanced and uniquely yours.
-      </p>
+        <!-- =====================
+             INJECTABLES
+        ====================== -->
 
-    </div>
+        <a
+          href="treatments.html#injectables"
+          class="treatment-card treatment-dark treatment-large"
+        >
 
-  </div>
+          <span class="treatment-number">
+            01 · INJECTABLES
+          </span>
 
-</section>
+
+          <h3>
+            Injectables
+          </h3>
+
+
+          <p>
+            Refined injectable treatments designed to
+            enhance, restore and rejuvenate while
+            preserving natural-looking facial harmony.
+          </p>
+
+
+          <div class="treatment-group">
+
+            <h4>
+              BOTULINUM TOXIN
+            </h4>
+
+            <ul>
+
+              <li>
+                Botox
+              </li>
+
+              <li>
+                Dysport
+              </li>
+
+            </ul>
+
+          </div>
+
+
+          <div class="treatment-group">
+
+            <h4>
+              DERMAL FILLERS
+            </h4>
+
+            <ul>
+
+              <li>
+                Lip Filler
+              </li>
+
+              <li>
+                Cheek Filler
+              </li>
+
+              <li>
+                Chin Filler
+              </li>
+
+              <li>
+                Under-Eye Filler
+              </li>
+
+              <li>
+                Full Face Contouring
+              </li>
+
+            </ul>
+
+          </div>
+
+
+          <div class="treatment-group">
+
+            <h4>
+              SKIN REJUVENATION
+            </h4>
+
+            <ul>
+
+              <li>
+                Skin Booster
+              </li>
+
+              <li>
+                Profhilo
+              </li>
+
+              <li>
+                Jalupro
+              </li>
+
+              <li>
+                Sculptra
+              </li>
+
+            </ul>
+
+          </div>
+
+        </a>
+
+
+
+        <!-- =====================
+             FACIAL AESTHETICS
+        ====================== -->
+
+        <a
+          href="treatments.html#facial-aesthetics"
+          class="treatment-card treatment-light"
+        >
+
+          <span class="treatment-number">
+            02 · FACIAL AESTHETICS
+          </span>
+
+
+          <h3>
+            Facial Aesthetics
+          </h3>
+
+
+          <p>
+            Personalized approaches designed around
+            facial balance, proportion and your individual
+            aesthetic goals.
+          </p>
+
+
+          <div class="treatment-group">
+
+            <h4>
+              MESOTHERAPY
+            </h4>
+
+            <ul>
+
+              <li>
+                Facial Mesotherapy
+              </li>
+
+            </ul>
+
+          </div>
+
+        </a>
+
+
+
+        <!-- =====================
+             HAIR & SCALP
+        ====================== -->
+
+        <a
+          href="treatments.html#hair-scalp"
+          class="treatment-card treatment-gold"
+        >
+
+          <span class="treatment-number">
+            03 · HAIR &amp; SCALP
+          </span>
+
+
+          <h3>
+            Hair &amp; Scalp
+          </h3>
+
+
+          <p>
+            Targeted aesthetic care designed to support
+            the appearance of healthier, fuller-looking
+            hair and a revitalized scalp.
+          </p>
+
+
+          <div class="treatment-group">
+
+            <h4>
+              HAIR REJUVENATION
+            </h4>
+
+            <ul>
+
+              <li>
+                Hair Mesotherapy
+              </li>
+
+            </ul>
+
+          </div>
+
+        </a>
+
+
+
+        <!-- =====================
+             SKIN
+        ====================== -->
+
+        <a
+          href="treatments.html#skin"
+          class="treatment-card treatment-white"
+        >
+
+          <span class="treatment-number">
+            04 · SKIN
+          </span>
+
+
+          <h3>
+            Skin
+          </h3>
+
+
+          <p>
+            Targeted treatments designed to support
+            smoother, refreshed and revitalized-looking skin.
+          </p>
+
+
+          <div class="treatment-group">
+
+            <h4>
+              SKIN REJUVENATION
+            </h4>
+
+            <ul>
+
+              <li>
+                Microneedling
+              </li>
+
+            </ul>
+
+          </div>
+
+        </a>
+
+
+      </div>
+
+    </section>
+
 
 
     <!-- =========================
-     BEFORE & AFTER RESULTS
-========================== -->
+         ABOUT LUMINASKIN
+    ========================== -->
 
-<section id="results" class="results section">
+    <section
+      id="about"
+      class="philosophy"
+    >
 
-  <div class="section-heading">
+      <div class="philosophy-image">
 
-    <div>
+        <img
+          src="luminaskin-about.JPG"
+          alt="LuminaSkin Medical Spa personalized aesthetic care"
+          loading="lazy"
+        >
+
+      </div>
+
+
+      <div class="philosophy-content">
+
+        <div class="philosophy-title">
+
+          <p class="eyebrow">
+            ABOUT LUMINASKIN
+          </p>
+
+
+          <h2>
+            Modern aesthetics.
+            <br>
+            <em>Personalized care.</em>
+          </h2>
+
+        </div>
+
+
+        <div class="philosophy-copy">
+
+          <div class="gold-line"></div>
+
+
+          <p>
+            At LuminaSkin Medical Spa in Richmond Hill,
+            every treatment begins with understanding
+            your features, goals and desired level of change.
+          </p>
+
+
+          <p>
+            Our approach is centered on thoughtful
+            treatment planning and results that feel
+            refined, balanced and uniquely yours.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         BEFORE & AFTER RESULTS
+    ========================== -->
+
+    <section
+      id="results"
+      class="results section"
+    >
+
+      <div class="section-heading">
+
+        <div>
+
+          <p class="eyebrow">
+            RESULTS
+          </p>
+
+          <h2>
+            Before &amp; After
+          </h2>
+
+        </div>
+
+
+        <p>
+          A selection of treatment results showcasing
+          our approach to refined, natural-looking
+          aesthetic enhancement.
+        </p>
+
+      </div>
+
+
+
+      <div class="results-grid">
+
+
+        <div class="result-card">
+
+          <img
+            src="before-after- contouring.png"
+            alt="Before and after facial contouring results at LuminaSkin"
+            loading="lazy"
+          >
+
+          <span>
+            FACIAL CONTOURING
+          </span>
+
+        </div>
+
+
+        <div class="result-card">
+
+          <img
+            src="before-after-lips.png"
+            alt="Before and after lip enhancement results at LuminaSkin"
+            loading="lazy"
+          >
+
+          <span>
+            LIP ENHANCEMENT
+          </span>
+
+        </div>
+
+
+        <div class="result-card">
+
+          <img
+            src="before-after-lips2.PNG"
+            alt="Before and after lip enhancement treatment results"
+            loading="lazy"
+          >
+
+          <span>
+            LIP ENHANCEMENT
+          </span>
+
+        </div>
+
+
+        <div class="result-card">
+
+          <img
+            src="before-after-undereye.png"
+            alt="Before and after under-eye treatment results at LuminaSkin"
+            loading="lazy"
+          >
+
+          <span>
+            UNDER-EYE TREATMENT
+          </span>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         INSTAGRAM
+    ========================== -->
+
+    <section class="instagram-section">
 
       <p class="eyebrow">
-        RESULTS
+        FOLLOW LUMINASKIN
       </p>
 
+
       <h2>
-        Before &amp; After
+        See more of our
+        <br>
+        <em>latest work.</em>
       </h2>
 
-    </div>
 
-    <p>
-      A selection of treatment results showcasing
-      our approach to refined, natural-looking
-      aesthetic enhancement.
-    </p>
-
-  </div>
-
-
-  <div class="results-grid">
-
-    <div class="result-card">
- <img
-  src="before-after- contouring.png"
-  alt="Before and after facial contouring results"
->
-      <span>FACIAL CONTOURING</span>
-    </div>
-
-    <div class="result-card">
-      <img
-        src="before-after-lips.png"
-        alt="Before and after lip enhancement results"
+      <a
+        href="https://www.instagram.com/luminaskin.ms/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="instagram-button"
       >
-      <span>LIP ENHANCEMENT</span>
-    </div>
+        @LUMINASKIN.MS
+      </a>
 
-    <div class="result-card">
-      <img
-        src="before-after-lips2.PNG"
-        alt="Before and after lip enhancement results"
-      >
-      <span>LIP ENHANCEMENT</span>
-    </div>
+    </section>
 
-    <div class="result-card">
-      <img
-        src="before-after-undereye.png"
-        alt="Before and after under-eye treatment results"
-      >
-      <span>UNDER-EYE TREATMENT</span>
-    </div>
 
-  </div>
 
-</section>
-
-<!-- =========================
-     INSTAGRAM
-========================== -->
-
-<section class="instagram-section">
-
-  <p class="eyebrow">
-    FOLLOW LUMINASKIN
-  </p>
-
-  <h2>
-    See more of our
-    <br>
-    <em>latest work.</em>
-  </h2>
-
-  <a
-    href="https://www.instagram.com/luminaskin.ms/"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="instagram-button"
-  >
-    @LUMINASKIN.MS
-  </a>
-
-</section>
     <!-- =========================
          BOOKING
     ========================== -->
 
-    <section id="booking" class="booking">
+    <section
+      id="booking"
+      class="booking"
+    >
 
       <p class="eyebrow">
         READY WHEN YOU ARE
       </p>
+
 
       <h2>
         Your aesthetic journey
@@ -597,120 +867,146 @@
         <em>starts here.</em>
       </h2>
 
-     <a href="#contact" class="black-button">
-  BOOK A CONSULTATION
-</a>
+
+      <a
+        href="#contact"
+        class="black-button"
+      >
+        BOOK A CONSULTATION
+      </a>
 
     </section>
+
 
 
     <!-- =========================
          CONTACT
     ========================== -->
 
-  <section id="contact" class="contact section">
+    <section
+      id="contact"
+      class="contact section"
+    >
 
-  <div class="contact-title">
+      <div class="contact-title">
 
-    <p class="eyebrow">
-      CONTACT
-    </p>
-
-    <h2>
-      Let's connect.
-    </h2>
-
-  </div>
+        <p class="eyebrow">
+          CONTACT
+        </p>
 
 
-  <div class="contact-details">
+        <h2>
+          Let's connect.
+        </h2>
+
+      </div>
 
 
-    <!-- LOCATION -->
-
-   <div>
-
-  <strong>
-    LOCATION
-  </strong>
-
-  <p>
-    10376 Yonge St<br>
-    Richmond Hill, ON L4C 3B8
-  </p>
-
-  <a
-    href="https://www.google.com/maps/search/?api=1&query=10376+Yonge+St+Richmond+Hill+ON+L4C+3B8"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="location-link"
-  >
-    GET DIRECTIONS
-  </a>
-
-</div>
-
-    <!-- PHONE -->
-
-    <div>
-
-      <strong>
-        PHONE
-      </strong>
-
-      <p>
-        <a href="tel:+14374311150">
-          +1 (437) 431-1150
-        </a>
-      </p>
-
-    </div>
+      <div class="contact-details">
 
 
-    <!-- EMAIL -->
+        <!-- LOCATION -->
 
-    <div>
+        <div>
 
-      <strong>
-        EMAIL
-      </strong>
-
-      <p>
-        <a href="mailto:luminaskin.ms@gmail.com">
-          luminaskin.ms@gmail.com
-        </a>
-      </p>
-
-    </div>
+          <strong>
+            LOCATION
+          </strong>
 
 
-    <!-- INSTAGRAM -->
-
-    <div>
-
-      <strong>
-        INSTAGRAM
-      </strong>
-
-      <p>
-
-        <a
-          href="https://www.instagram.com/luminaskin.ms/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          @luminaskin.ms
-        </a>
-
-      </p>
-
-    </div>
+          <p>
+            10376 Yonge St
+            <br>
+            Richmond Hill, ON L4C 3B8
+          </p>
 
 
-  </div>
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=10376+Yonge+St+Richmond+Hill+ON+L4C+3B8"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="location-link"
+          >
+            GET DIRECTIONS
+          </a>
 
-</section>
+        </div>
+
+
+
+        <!-- PHONE -->
+
+        <div>
+
+          <strong>
+            PHONE
+          </strong>
+
+
+          <p>
+
+            <a href="tel:+14374311150">
+              +1 (437) 431-1150
+            </a>
+
+          </p>
+
+        </div>
+
+
+
+        <!-- EMAIL -->
+
+        <div>
+
+          <strong>
+            EMAIL
+          </strong>
+
+
+          <p>
+
+            <a href="mailto:luminaskin.ms@gmail.com">
+              luminaskin.ms@gmail.com
+            </a>
+
+          </p>
+
+        </div>
+
+
+
+        <!-- INSTAGRAM -->
+
+        <div>
+
+          <strong>
+            INSTAGRAM
+          </strong>
+
+
+          <p>
+
+            <a
+              href="https://www.instagram.com/luminaskin.ms/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @luminaskin.ms
+            </a>
+
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
   </main>
+
 
 
   <!-- =========================
@@ -719,11 +1015,16 @@
 
   <footer>
 
-    <a href="#home" class="logo footer-logo">
+    <a
+      href="#home"
+      class="logo footer-logo"
+      aria-label="LuminaSkin Medical Spa Home"
+    >
 
       <span class="logo-name">
         LuminaSkin
       </span>
+
 
       <span class="logo-sub">
         MEDICAL SPA
@@ -731,11 +1032,13 @@
 
     </a>
 
+
     <p>
       © 2026 LuminaSkin Medical Spa
     </p>
 
   </footer>
+
 
 
   <!-- =========================
@@ -750,26 +1053,40 @@
     const navigation =
       document.querySelector("nav");
 
-    menuButton.addEventListener("click", function () {
 
-      navigation.classList.toggle("mobile-open");
+    menuButton.addEventListener(
+      "click",
+      function () {
 
-    });
+        navigation.classList.toggle(
+          "mobile-open"
+        );
+
+      }
+    );
 
 
     document
       .querySelectorAll("nav a")
       .forEach(function (link) {
 
-        link.addEventListener("click", function () {
+        link.addEventListener(
+          "click",
+          function () {
 
-          navigation.classList.remove("mobile-open");
+            navigation.classList.remove(
+              "mobile-open"
+            );
 
-        });
+          }
+        );
 
       });
 
   </script>
 
+
 </body>
+
 </html>
+```
